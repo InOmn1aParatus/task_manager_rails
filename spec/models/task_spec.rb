@@ -6,7 +6,7 @@ RSpec.describe Task, type: :model do
       it "returns true if task title is 'laundry'" do
         task = Task.create!(title: 'laundry', description: 'clean the clothes')
 
-        expect(task.laundry).to be(true)
+        expect(task.laundry?).to be(true)
       end
     end
   end
